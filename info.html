@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WEB222 Himanshi</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- can put title in the tag below -->
+    <title> </title>
+    <!-- Here link to the styles is to be declared. The path to the file name is in href  can be different if css filename is different or path is differnt-->
+    <link rel="stylesheet" href="script.css" />
+    <script src="info.js"></script>
+  </head>
+  <body>
+
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="file:///C:/Users/dell/Downloads/finalassignment/honesty.html">Honesty</a>
+      <a href="file:///C:/Users/dell/Downloads/finalassignment/info.html">Info</a>
+      <a href="#">Reflection</a>
+    </div>
+    <div class="vl"></div>
+    <div class="v2"></div>
+    <!-- <button class="openbtn" onclick="openNav()">☰ Page Menu</button>  -->
+    <script>
+      function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+      }
+      </script>
+    <div class="container">
+      <form
+        name="myForm"
+        action="https://httpbin.org/post"
+        class="form"
+        onsubmit="return validateForm()"
+      >
+        <table class="rowelement">
+          <tr>
+            <td>Email Address:</td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="Enter a valid email address"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>First Name: </label></td>
+            <td>
+              <input type="text" name="fname" placeholder="First Name" />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Last Name: </label></td>
+            <td>
+              <input type="text" name="lname" placeholder="Last Name" />
+            </td>
+          </tr>
+          <tr>
+            <td><label>User Name: </label></td>
+            <td>
+              <input type="text" name="uname" placeholder="User Name" />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Age: </label></td>
+            <td>
+              <input type="text" name="age" placeholder="Age" />
+            </td>
+          </tr>
+         
+            <tr>
+              <td>
+                Education Status:<br/>
+                    
+                <input type="radio" name="degree" id="Graduate">Graduate<br>
+                <input type="radio" name="degree" id="Current enrolled">post graduate<br>
+                <input type="radio" name="degree" id=" Did not graduate"> Did not graduate
+            
+                
+                </form>       
+              </td>
+            </tr>     
+
+          <tr> 
+            <td><label>Password: </label></td>
+            <td>
+              <input type="password" name="password" placeholder="Password" />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Confirm Password: </label></td>
+            <td>
+              
+              <input
+                type="password"
+                name="confirm_password"
+                placeholder="Password"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="hidden" name="lastName" id="lastName" value="Himanshi" />
+  <input type="hidden" name="studentId" id="studentId" value="155860208" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              
+              <!-- <input type="submit" name="submit" value="Submit" /> -->
+              <input type="submit" value="Submit" class="button"/>
+            </td>
+
+            <td>
+             
+              <input type="reset" value="Reset" class="button2"/>
+            </td>
+          </tr>
+        
+        </table>
+      </form>
+    </div>
+    <!-- link to javascript file  -->
+   
+  </body>
+</html>
