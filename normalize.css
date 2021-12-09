@@ -1,0 +1,112 @@
+/* Name: Himanshi
+Student id: 155860208
+Section: ZBB */
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #59b665;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 10;
+}
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.form {
+  padding: 30px 40px;
+  text-align: center;
+  width: 0 auto;
+}
+.button
+{
+    font-size: 13px;
+    background-color:green;
+    color: white;
+}
+.button2
+{
+    font-size: 13px;
+    background-color:rgb(209, 36, 30);
+    color: white;
+}
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
+.vl {
+  border-left: 6px solid white;
+  height: 1000px;
+  position: absolute;
+  left: 20%;
+  margin-left: -3px;
+  top: 0;
+}
+.v2 {
+  border-right: 6px solid white;
+  height: 1000px;
+  position: absolute;
+  right: 20%;
+  margin-left: -3px;
+  top: 0;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(10, 9, 9);
+  color: white;
+  text-align: center;
+}
+h1 {
+  font-size: 2em;
+  margin: 70px;
+  text-align: center;
+}

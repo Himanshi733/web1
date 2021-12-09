@@ -1,3 +1,6 @@
+// Name: Himanshi
+// Student id: 155860208
+// Section: ZBB
 function validateForm() {
     var fname = document.forms["myForm"]["fname"].value;
     console.log(fname);
@@ -112,9 +115,14 @@ function validateForm() {
       window.alert("Passwords does not match");
       return false;
     }
+    
     if ((age <=18) || (age>=60)) {
         window.alert("Age must be in between 18-60");
         return false;
+      }
+      else
+      {
+        window.alert("successfully submitted");
       }
     
     return true;
